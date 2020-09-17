@@ -26,9 +26,10 @@ if($query){
 $contato = ['nome' => 'Matheus Melo', 'whatsapp' => '551191234567'];
 
 //Inserindo dados no DataBase
-mysqli_query($dB, 
-            "INSERT INTO contatos (nome, whatsapp)
-            VALUES ('{$contato['nome']}', '{$contato['whatsapp']}')");
+mysqli_query(
+    $dB, 
+    "INSERT INTO contatos (nome, whatsapp) VALUES ('{$contato['nome']}', '{$contato['whatsapp']}')"
+);
 
 //Lista o que está na tabela.
 $query = mysqli_query($dB, 'SELECT id, nome, whatsapp FROM contatos');
