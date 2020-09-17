@@ -6,16 +6,15 @@ mysqli_connect('host', 'user', 'password', 'nome do DataBase');
 $dB = mysqli_connect('localhost', 'root', '', 'php');
 
 /* Exemplo para cirar uma tabela.
-mysqli_query($var, 
-                'CREATE TABLE nomeDaTabela (atributo BIGINT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
-                atributo VARCHAR(255) NOT NULL,
-                atributo BIGINT)');
+mysqli_query(
+    $var, 
+    'CREATE TABLE nomeDaTabela (atributo BIGINT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY, atributo VARCHAR(255) NOT NULL, atributo BIGINT)');
 */
 
-$query = mysqli_query($dB, 
-                    'CREATE TABLE IF NOT EXISTS contatos (id BIGINT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
-                    nome VARCHAR(255) NOT NULL,
-                    whatsapp BIGINT)');
+$query = mysqli_query(
+    $dB, 
+    'CREATE TABLE IF NOT EXISTS contatos (id BIGINT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY, nome VARCHAR(255) NOT NULL, whatsapp BIGINT)'
+);
 
 if($query){
     echo'Criado com sucesso';
