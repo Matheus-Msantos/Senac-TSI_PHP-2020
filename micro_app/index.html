@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <style>
+        .title {
+            text-align: center;
+            margin: 20px;
+            font-size: 45px;
+        }
+
+        .login {
+            text-align: center;
+        }
+
+        .login span {
+            display: block;
+            font-size: 20px;
+            text-decoration: underline;
+        }
+
+        .btn {
+            margin-top: 15px;
+            text-align: center;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="title">Login</h1>
+    <form method="post" action="grava_contato.php">
+        <div class="login">
+            <span>e-mail:</span> <input type="text" name="email"><br>
+            <span>senha:</span> <input type="password" name="senha">
+        </div>
+        <div class="btn">
+            <input type="submit" value="entrar">
+        </div>
+    </form>
+</body>
+
+</html>
