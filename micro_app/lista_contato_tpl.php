@@ -3,7 +3,7 @@
 </head>
 <body>
 
-    <a href="index.html">+ Novo contato</a>
+    <a href="./contato.html">+ Novo contato</a>
     <br><br>
     <table border=1>
         <tr>
