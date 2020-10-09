@@ -24,10 +24,11 @@
                         }
                     }else{
                         echo "<tr>
-                                <td colspan='3'> Não há dados</td>
+                                <td colspan='4'> Não encontrei nada com {_POST[$argumento]}</td>
                             </tr>";
                     }
                 ?>
             </tr>
         </table>
+    </body>
 </html>
