@@ -2,7 +2,7 @@
 
 $dsn = 'sqlsrv:Server=localhost\\SQLEXPRESS;Database=consulta';
 $user = 'sa';
-$password = '100595xoxo!';
+$password = '';
 
 
 $db = new PDO ( $dsn, $user, $password );
