@@ -15,9 +15,9 @@ $explicacao = $_POST['explicacao'];
 
 echo "<br><br>Você deu a nota $nota pelo motivo \"$explicacao\"";
 
-$db = new PDO(	'mysql:dbname=cms;host=dockerhost', // DSN
-				'cms', // usuário 
-				'cms' // senha
+$db = new PDO(	'mysql:dbname=php;host=localhost', // DSN
+				'root', // usuário 
+				'' // senha
 			);
 
 $stmt = $db->prepare('	INSERT INTO nps 

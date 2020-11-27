@@ -2,7 +2,7 @@
 
 require 'sessao.php';
 
-$_SESSION['nome'] = 'Matheus';
+$_SESSION['nome'] = 'Bono';
 
 ?>
 <html>

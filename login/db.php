@@ -1,11 +1,16 @@
 <?php
-//Tutorial para instalação dos drivers: 
-//https://hcode.com.br/blog/instalando-sql-server-e-conectando-com-php
 
-//DSN para SQL Server
-$dsn = 'sqlsrv:Server=localhost\\SQLEXPRESS;Database=php';
-$user = 'cms';
-$password = 'cms';
+/* Conectando no SQLServer usando driver invocation */
 
-//Como se conectar com o banco
-$db = new PDO($dsn, $user, $password);
+$dsn = 'mysql:dbname=login;host=localhost';
+$user = 'root';
+$password = '';
+
+try {
+    $db = new PDO($dsn, $user, $password); 
+} catch (PDOException $e) {
+    echo 'Connection failed: ' . $e->getMessage();
+}
+
+
+$sql = 'SELECT id, email, senha FROM usuario';
